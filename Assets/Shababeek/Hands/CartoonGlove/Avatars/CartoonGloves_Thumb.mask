@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: CartoonGloves_Thumb
+  m_Mask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: HandRig
+    m_Weight: 0
+  - m_Path: HandRig/Main
+    m_Weight: 0
+  - m_Path: HandRig/Main/Main_end
+    m_Weight: 0
+  - m_Path: HandRig/root
+    m_Weight: 0
+  - m_Path: HandRig/root/index1
+    m_Weight: 0
+  - m_Path: HandRig/root/index1/index2
+    m_Weight: 0
+  - m_Path: HandRig/root/index1/index2/index3
+    m_Weight: 0
+  - m_Path: HandRig/root/index1/index2/index3/index4
+    m_Weight: 0
+  - m_Path: HandRig/root/index1/index2/index3/index4/index5
+    m_Weight: 0
+  - m_Path: HandRig/root/index1/index2/index3/index4/index5/index5_end
+    m_Weight: 0
+  - m_Path: HandRig/root/middle1
+    m_Weight: 0
+  - m_Path: HandRig/root/middle1/middle2
+    m_Weight: 0
+  - m_Path: HandRig/root/middle1/middle2/middle3
+    m_Weight: 0
+  - m_Path: HandRig/root/middle1/middle2/middle3/middle4
+    m_Weight: 0
+  - m_Path: HandRig/root/middle1/middle2/middle3/middle4/middle5
+    m_Weight: 0
+  - m_Path: HandRig/root/middle1/middle2/middle3/middle4/middle5/middle5_end
+    m_Weight: 0
+  - m_Path: HandRig/root/Piky1
+    m_Weight: 0
+  - m_Path: HandRig/root/Piky1/pinky2
+    m_Weight: 0
+  - m_Path: HandRig/root/Piky1/pinky2/pinky3
+    m_Weight: 0
+  - m_Path: HandRig/root/Piky1/pinky2/pinky3/pinky4
+    m_Weight: 0
+  - m_Path: HandRig/root/Piky1/pinky2/pinky3/pinky4/pinky5
+    m_Weight: 0
+  - m_Path: HandRig/root/Piky1/pinky2/pinky3/pinky4/pinky5/pinky5_end
+    m_Weight: 0
+  - m_Path: HandRig/root/ring1
+    m_Weight: 0
+  - m_Path: HandRig/root/ring1/ring2
+    m_Weight: 0
+  - m_Path: HandRig/root/ring1/ring2/ring3
+    m_Weight: 0
+  - m_Path: HandRig/root/ring1/ring2/ring3/ring4
+    m_Weight: 0
+  - m_Path: HandRig/root/ring1/ring2/ring3/ring4/ring5
+    m_Weight: 0
+  - m_Path: HandRig/root/ring1/ring2/ring3/ring4/ring5/ring5_end
+    m_Weight: 0
+  - m_Path: HandRig/root/thumb1
+    m_Weight: 1
+  - m_Path: HandRig/root/thumb1/thumb2
+    m_Weight: 1
+  - m_Path: HandRig/root/thumb1/thumb2/thumb3
+    m_Weight: 1
+  - m_Path: HandRig/root/thumb1/thumb2/thumb3/thumb3_end
+    m_Weight: 1
+  - m_Path: RightHandGlove
+    m_Weight: 0

@@ -1,0 +1,18 @@
+{
+    "name": "Shababeek.Sequencing",
+    "rootNamespace": "Shababeek.Sequencing",
+    "references": [
+        "Shababeek.Interactions",
+        "UniRx",
+        "Shababeek.Utility"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

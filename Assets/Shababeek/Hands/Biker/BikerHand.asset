@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2489db449460543b6d0d4f8e8d4715, type: 3}
+  m_Name: BikerHand
+  m_EditorClassIdentifier: 
+  previewSprite: {fileID: 2800000, guid: e0d7c959159df4964b7a3651b7da7705, type: 3}
+  description: a biker hand with optinal tattos
+  leftHandPrefab: {fileID: 5568792620148793729, guid: d730173ff566847f6adb65f3f48d5dc1, type: 3}
+  rightHandPrefab: {fileID: 4777968584998597561, guid: 1f7e5539ce8254b33b74dda039f4ea07, type: 3}
+  defaultPose:
+    open: {fileID: 7400000, guid: 23e0f7b0b51315f4191a4030976ce994, type: 2}
+    closed: {fileID: 7400000, guid: 178252f7b48a5834a89a057bd9f2a7b7, type: 2}
+    name: Default
+    type: 0
+  poses:
+  - open: {fileID: 7400000, guid: 7d8a99726292494469bd41e0c8296203, type: 2}
+    closed: {fileID: 7400000, guid: 178252f7b48a5834a89a057bd9f2a7b7, type: 2}
+    name: 
+    type: 0
+  - open: {fileID: 7400000, guid: f2085fcc69241734ea083bda8389e59b, type: 2}
+    closed: {fileID: 7400000, guid: 178252f7b48a5834a89a057bd9f2a7b7, type: 2}
+    name: 
+    type: 1
+  - open: {fileID: 7400000, guid: 46e8eb202d40c9f4b9bc16e8da0a23d8, type: 2}
+    closed: {fileID: 7400000, guid: aa194b9fc08384d458ab9664836ee189, type: 2}
+    name: 
+    type: 0
+  - open: {fileID: 7400000, guid: eb06f259fea8c084aa841ffb830bc339, type: 2}
+    closed: {fileID: 7400000, guid: aa194b9fc08384d458ab9664836ee189, type: 2}
+    name: 
+    type: 1
+  handAvatarMaskContainer:
+    thumb: {fileID: 31900000, guid: 39ac62de39a1f48d5b98e3155d6ebadd, type: 2}
+    index: {fileID: 31900000, guid: a248819741eb74fcaba4e70b83e376bd, type: 2}
+    middle: {fileID: 31900000, guid: 03a45126b7efe46b596d387b3b7ac84e, type: 2}
+    ring: {fileID: 31900000, guid: 75c4e060908524cde82042900338dd1f, type: 2}
+    pinky: {fileID: 31900000, guid: 1745c7d3d2fdb4e3ab220457f2cd4594, type: 2}

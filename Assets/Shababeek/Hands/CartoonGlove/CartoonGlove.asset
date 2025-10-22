@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f2489db449460543b6d0d4f8e8d4715, type: 3}
+  m_Name: CartoonGlove
+  m_EditorClassIdentifier: 
+  previewSprite: {fileID: 2800000, guid: d436a0bb5590143f6b131e711f8f673a, type: 3}
+  description: generic untextured glove
+  leftHandPrefab: {fileID: 4776940769898314339, guid: 6d9f21935e34845e98f2161b257b8d61, type: 3}
+  rightHandPrefab: {fileID: 5804751748178673992, guid: b9d0b6d6b5b8142039f2e912c9f0ebb1, type: 3}
+  defaultPose:
+    open: {fileID: 7400000, guid: 1f3dfce806f204de3a63702c5a902189, type: 2}
+    closed: {fileID: 7400000, guid: 621af613be7b04accbcd32dbd1cdeebd, type: 2}
+    name: Default
+    type: 0
+  poses: []
+  handAvatarMaskContainer:
+    thumb: {fileID: 31900000, guid: 168a0e3e456064984b62f6d63d873a12, type: 2}
+    index: {fileID: 31900000, guid: 422a1a3f4283e46c8a8ba56e00447139, type: 2}
+    middle: {fileID: 31900000, guid: 63ec211bb013b45dc90c9526c01a63d8, type: 2}
+    ring: {fileID: 31900000, guid: 9eb62f8f3a0224915be148c7a4fd1afd, type: 2}
+    pinky: {fileID: 31900000, guid: cd5347badbdde4375a7d1c16a91bff63, type: 2}
