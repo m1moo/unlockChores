@@ -83,12 +83,16 @@ namespace Shababeek.Interactions
         /// <param name="interactor">The interactor releasing the object</param>
         public virtual void UnGrab(Grabable interactable, InteractorBase interactor)
         {
-            interactable.transform.parent = null;
-            for (var i = 0; i < colliders.Length; i++)
+            if(interactable != null)
             {
-                colliders[i].gameObject.layer = collisionLayers[i];
+                interactable.transform.parent = null;
+                for (var i = 0; i < colliders.Length; i++)
+                {
+                    colliders[i].gameObject.layer = collisionLayers[i];
+                }
+                gameObject.layer = layer;
+
             }
-            gameObject.layer = layer;
         }
     }
 }
