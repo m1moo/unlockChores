@@ -7,6 +7,8 @@ TagManager:
   - Ground
   - Toy
   - Ball
+  - Brush
+  - Cloth
   layers:
   - Default
   - TransparentFX
