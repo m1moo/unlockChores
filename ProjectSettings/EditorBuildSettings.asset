@@ -6,8 +6,35 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/LOADER.unity
+    guid: 15a48a5f966cd1247bd69d7def59a34c
+  - enabled: 1
     path: Assets/Scenes/BoyuCao(Clothe sorting).unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/BoyuCao(KeyPad).unity
+    guid: 605943236c8ca9b40b5b525b5c565e23
+  - enabled: 1
+    path: Assets/Scenes/BoyuCao(VegetablesCutting).unity
+    guid: b2976611a28d8f64aafa67a948ef7a54
+  - enabled: 1
+    path: Assets/Scenes/DishWashing.unity
+    guid: 8870db33c653ac84f8ac6195ee548c0a
+  - enabled: 1
+    path: Assets/Scenes/Pick&Place.unity
+    guid: a02dcb33955b09f47b09e27a3fd30907
+  - enabled: 1
+    path: Assets/Scenes/RoomCleaning.unity
+    guid: 4fb33c4a8119ba341b163c080913cedc
+  - enabled: 1
+    path: Assets/Scenes/SwitchItRight.unity
+    guid: dcd90f95433cd3b4babf60e6d23588c0
+  - enabled: 1
+    path: Assets/Scenes/TrashPicking and sorting.unity
+    guid: 0f93a83a35ee041429f558b6c5b6dc4a
+  - enabled: 1
+    path: Assets/Scenes/WindowDusting.unity
+    guid: 3816ee94062783a43bb46b1071caef45
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7e5a9761bf4293c48ae31c662c98702d, type: 2}
