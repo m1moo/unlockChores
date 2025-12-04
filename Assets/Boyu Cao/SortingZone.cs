@@ -2,62 +2,78 @@
 
 public class SortingZone : MonoBehaviour
 {
-    public ClothingType acceptedType;
+    [Header("Sorting")]
+    public ClothingType acceptedType;   // Which type this zone accepts
 
-    [Header("Sound Effects")]
+    [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip correctSound;
     public AudioClip wrongSound;
 
-    [Header("Particle Effects")]
+    [Header("Particles")]
     public ParticleSystem correctEffectPrefab;
     public ParticleSystem wrongEffectPrefab;
 
     private void OnTriggerEnter(Collider other)
     {
-        var clothing = other.GetComponent<ClothingItem>();
+        // Check if this object is a clothing item
+        ClothingItem clothing = other.GetComponent<ClothingItem>();
         if (clothing == null) return;
 
-        bool correct = clothing.type == acceptedType;
+        bool isCorrect = clothing.type == acceptedType;
+        Vector3 hitPosition = clothing.transform.position;
 
-        // Play sound
-        PlaySound(correct);
+        // Play feedback (sound + particles)
+        PlayFeedback(isCorrect, hitPosition);
 
-        // Play particles
-        PlayParticles(correct, clothing.transform.position);
-
-        if (correct)
+        if (isCorrect)
         {
             Debug.Log("Correctly sorted: " + clothing.type);
+
+            // Tell the manager we sorted one correctly
+            if (ClothesSortingManager.Instance != null)
+            {
+                ClothesSortingManager.Instance.OnCorrectItemSorted();
+            }
+
+            // Remove the clothing item
             Destroy(clothing.gameObject);
         }
         else
         {
             Debug.Log("Wrong slot!");
+
+            // If you want, you could also push the item out or leave it
+            // For now, we just play wrong feedback and do nothing else
         }
     }
 
-    private void PlaySound(bool correct)
+    private void PlayFeedback(bool correct, Vector3 position)
     {
-        if (audioSource == null) return;
+        // Audio
+        if (audioSource != null)
+        {
+            if (correct && correctSound != null)
+            {
+                audioSource.PlayOneShot(correctSound);
+            }
+            else if (!correct && wrongSound != null)
+            {
+                audioSource.PlayOneShot(wrongSound);
+            }
+        }
 
-        if (correct && correctSound != null)
-            audioSource.PlayOneShot(correctSound);
-        else if (!correct && wrongSound != null)
-            audioSource.PlayOneShot(wrongSound);
-    }
-
-    private void PlayParticles(bool correct, Vector3 position)
-    {
+        // Particles
         ParticleSystem prefab = correct ? correctEffectPrefab : wrongEffectPrefab;
-        if (prefab == null) return;
-
-        ParticleSystem effect = Instantiate(prefab, position, Quaternion.identity);
-        effect.Play();
-
-        Destroy(effect.gameObject, effect.main.duration + 0.1f);
+        if (prefab != null)
+        {
+            ParticleSystem effect = Instantiate(prefab, position, Quaternion.identity);
+            effect.Play();
+            Destroy(effect.gameObject, effect.main.duration + 0.1f);
+        }
     }
 }
+
 
 
 
