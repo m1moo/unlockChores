@@ -11,6 +11,8 @@ public class SlicableVegetable : MonoBehaviour
 
     private bool isSliced = false;
 
+    public VegetableSliceManager sliceManager;
+
     public void Slice(Vector3 knifeDirection)
     {
         if (isSliced) return;
@@ -29,6 +31,12 @@ public class SlicableVegetable : MonoBehaviour
                 rb.AddForce(knifeDirection * sliceForce, ForceMode.Impulse);
             }
         }
+
+        if (sliceManager != null)
+        {
+            sliceManager.OnVegetableSliced();
+        }
     }
 }
+
 
