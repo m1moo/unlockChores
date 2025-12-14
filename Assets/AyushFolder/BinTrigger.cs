@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BinTrigger : MonoBehaviour
 {
@@ -13,6 +13,9 @@ public class BinTrigger : MonoBehaviour
             if (trash.trashColor == binColor)
             {
                 Debug.Log("Correct bin! " + trash.trashColor);
+
+                TrashCounter.instance.TrashSorted();
+                Destroy(other.gameObject);
             }
             else
             {
@@ -20,4 +23,5 @@ public class BinTrigger : MonoBehaviour
             }
         }
     }
+
 }

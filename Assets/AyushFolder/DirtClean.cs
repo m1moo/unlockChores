@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DirtClean : MonoBehaviour
 {
@@ -6,9 +7,13 @@ public class DirtClean : MonoBehaviour
     {
         if (other.CompareTag("Brush"))
         {
-            Debug.Log("Plate cleaned!");
-            gameObject.SetActive(false); // simplest option
-            // or Destroy(gameObject);
+            Destroy(gameObject);
+
+            // Check if any dirt is left
+            if (GameObject.FindGameObjectsWithTag("Dirt").Length == 1)
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            }
         }
     }
 }
