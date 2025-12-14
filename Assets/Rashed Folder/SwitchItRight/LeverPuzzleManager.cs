@@ -1,10 +1,11 @@
+using Unity.VisualScripting.Antlr3.Runtime;
 using UnityEngine;
 
 public class LeverPuzzleManager : MonoBehaviour
 {
     public LeverState[] levers;
     public bool[] correctPattern = { false, true, false, true, false };
-
+    public SimpleSceneLoader sceneLoader;
     private bool puzzleSolved = false;
 
     public void CheckPuzzle()
@@ -22,5 +23,7 @@ public class LeverPuzzleManager : MonoBehaviour
 
         puzzleSolved = true;
         Debug.Log("Puzzle solved!");
+        sceneLoader.LoadNextScene();
     }
 }
+
