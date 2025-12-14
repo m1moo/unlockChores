@@ -1,11 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class VegetableSliceManager : MonoBehaviour
 {
-    public int totalVegetables = 2;   // how many must be sliced
+    [Header("How many breads / vegetables must be sliced")]
+    public int totalVegetables = 2;
+
     private int slicedCount = 0;
 
-    public SlidingWall slidingWall;   // assign your wall script here
+    [Header("Next Scene")]
+    public string nextSceneName = "DishWashing";
 
     public void OnVegetableSliced()
     {
@@ -13,7 +17,8 @@ public class VegetableSliceManager : MonoBehaviour
 
         if (slicedCount >= totalVegetables)
         {
-            slidingWall.OpenWall();
+            SceneManager.LoadScene(nextSceneName);
         }
     }
 }
+

@@ -12,9 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/BoyuCao(Clothe sorting).unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
-    path: Assets/Scenes/BoyuCao(KeyPad).unity
-    guid: 605943236c8ca9b40b5b525b5c565e23
-  - enabled: 1
     path: Assets/Scenes/BoyuCao(VegetablesCutting).unity
     guid: b2976611a28d8f64aafa67a948ef7a54
   - enabled: 1
@@ -35,6 +32,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/WindowDusting.unity
     guid: 3816ee94062783a43bb46b1071caef45
+  - enabled: 1
+    path: Assets/Scenes/BoyuCao(KeyPad).unity
+    guid: 605943236c8ca9b40b5b525b5c565e23
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 7e5a9761bf4293c48ae31c662c98702d, type: 2}
