@@ -5040,11 +5040,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalItems: 12
-  wallToOpen: {fileID: 1153212600}
-  slideUpAmount: 3
-  slideDuration: 5
-  wallAudioSource: {fileID: 0}
-  openSound: {fileID: 0}
+  nextSceneName: BoyuCao(VegetablesCutting)
 --- !u!1001 &1149094826
 PrefabInstance:
   m_ObjectHideFlags: 0
